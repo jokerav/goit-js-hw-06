@@ -7,7 +7,9 @@ const ingredients = [
   "Condiments",
 ];
 
+// Ссилка на список ингредиентов
 const ingredientsList = document.querySelector("#ingredients");
+//
 let list = [];
 ingredients.forEach((ingredient) => {
   const item = document.createElement("li");
