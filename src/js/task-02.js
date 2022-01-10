@@ -7,7 +7,7 @@ const ingredients = [
   "Condiments",
 ];
 
-// Ссилка на список ингредиентов
+// Ссылка на список ингредиентов
 const ingredientsList = document.querySelector("#ingredients");
 // элементы списка ложим в пустой масив
 let list = [];
