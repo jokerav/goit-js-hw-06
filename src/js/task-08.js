@@ -1,5 +1,4 @@
 const loginFormEl = document.querySelector(".login-form");
-// const inputs = document.querySelectorAll("input");
 const inputEmail = document.querySelector("input[type='email']");
 const inputPass = document.querySelector("input[type='password']");
 loginFormEl.addEventListener("submit", formSubmit);
@@ -16,6 +15,3 @@ function formSubmit(event) {
     return user;
   }
 }
-
-// const inputEmail = document.querySelector("input[type='email']");
-// console.log(inputEmail);
