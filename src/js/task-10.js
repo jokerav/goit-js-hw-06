@@ -10,8 +10,10 @@ const boxes = document.querySelector("#boxes");
 creatBtn.addEventListener("click", createBoxes);
 destroyBtn.addEventListener("click", destroyBoxes);
 
-function createBoxes() {
-  const amount = inputCountBoxesEl.valueAsNumber;
+function createBoxes(amount) {
+  console.log(amount);
+  amount = inputCountBoxesEl.valueAsNumber;
+  console.log(amount);
   let boxesArr = [];
   let size = 30;
   for (let i = 0; i < amount; i += 1) {
