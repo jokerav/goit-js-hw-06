@@ -12,6 +12,7 @@ function formSubmit(event) {
       email: inputEmail.value,
       password: inputPass.value,
     };
-    return user;
+    loginFormEl.reset();
+    console.log(user);
   }
 }

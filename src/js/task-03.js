@@ -14,9 +14,10 @@ const images = [
 ];
 
 const galleyrEl = document.querySelector(".gallery");
-images.forEach((image) => {
-  galleyrEl.insertAdjacentHTML(
-    "afterbegin",
-    ` <li><img src = "${image.url} alt = "${image.alt}" class = "task3__img"></li> `
+let gallery = [];
+images.map((image) => {
+  gallery.push(
+    `<li><img src = "${image.url} alt = "${image.alt}" class = "task3__img"></li>`
   );
 });
+galleyrEl.insertAdjacentHTML("afterbegin", gallery);

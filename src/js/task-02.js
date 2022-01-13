@@ -11,7 +11,7 @@ const ingredients = [
 const ingredientsList = document.querySelector("#ingredients");
 // элементы списка ложим в пустой масив
 let list = [];
-ingredients.forEach((ingredient) => {
+ingredients.map((ingredient) => {
   const item = document.createElement("li");
   item.textContent = ingredient;
   item.classList.add("item");

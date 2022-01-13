@@ -4,8 +4,10 @@ inputEl.addEventListener("input", makeHello);
 
 let nickName = "";
 function makeHello() {
-  if (inputEl.value !== "") nickName = inputEl.value;
-  else nickName = "Anonymous";
+  if (inputEl.value !== "")
+    { nickName = inputEl.value };
+  else
+    { nickName = "Anonymous" };
   nameEl.textContent = nickName;
 }
 
